@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import mapImg from '../assets/maps.png'
 import MyMap from '../components/Map'
 
 function Contact() {
@@ -51,7 +50,7 @@ function Contact() {
 
       </div>
       <div className='w-10'></div>
-      <MyMap />
+      {/* <MyMap /> */}
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import clsx from 'clsx';
 
-function Navbar() {
+function Navbar({ setPage }) {
   const [nav, setNav] = useState(false);
   const [logo, setLogo] = useState(false)
 
@@ -19,18 +19,18 @@ function Navbar() {
   return (
     <div className='flex justify-between items-center h-20 px-4 border-b-2'>
       <div>
-        <div  onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', ' p-5' ,'w-50' )}>
-        <img  src={require('../assets/logo.png')} />
+        <div onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', ' p-5', 'w-50')}>
+          <img src={require('../assets/logo.png')} />
         </div>
       </div>
 
       <ul className='hidden  md:flex'>
-        <NavLink title="Home" />
-        <NavLink title="about" />
-        <NavLink title="events" />
-        <NavLink title="projects" />
-        <NavLink title="shop" />
-        <NavLink title="contact" />
+        <NavLink title="Home" onClick={() => setPage(0)} />
+        <NavLink title="about" onClick={() => setPage(1)} />
+        <NavLink title="events" onClick={() => setPage(2)} />
+        <NavLink title="projects" onClick={() => setPage(3)} />
+        <NavLink title="shop" onClick={() => setPage(3)} />
+        <NavLink title="contact" onClick={() => setPage(4)} />
       </ul>
 
       <div className='hidden md:flex'>
@@ -49,7 +49,7 @@ function Navbar() {
       )}>
 
         <ul>
-        <img  src={require('../assets/logo.png')} />
+          <img src={require('../assets/logo.png')} />
           <NavLink title="Home" />
           <NavLink title="about" />
           <NavLink title="events" />
@@ -70,8 +70,8 @@ function Navbar() {
 
 export default Navbar
 
-function NavLink({ title, href }) {
-  return <a href={href} >
+function NavLink({ title, href, onClick }) {
+  return <a onClick={onClick} >
     <li className=' cursor-pointer uppercase hover:underline'>{title}</li>
   </a>
 }

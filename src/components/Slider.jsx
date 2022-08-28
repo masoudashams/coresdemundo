@@ -2,15 +2,38 @@ import React, { useState, useEffect, useRef } from "react";
 
 import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 const featuredProducts = [
-  
-     "/images/car1.png",
-     "/images/car2.png",
-     "/images/car3.png",
+  "/images/car1.png",
+  "/images/car2.png",
+  "/images/car3.png",
+];
+
+const titles = [
+  {
+    title: "Hello World",
+    desc: "This is an interesing fade in and out",
+  },
+  {
+    title: "Hello New",
+    desc: "This is an interesing fade in and out",
+  },
+  {
+    title: "Amazing",
+    desc: "This is an interesing fade in and out",
+  },
+  {
+    title: "Stuff",
+    desc: "This is an interesing fade in and out",
+  },
+  {
+    title: "Staranger things",
+    desc: "This is an interesing fade in and out",
+  },
 ];
 
 
 let count = 0;
 let slideInterval;
+
 export default function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -29,7 +52,7 @@ export default function Slider() {
     return () => {
       pauseSlider();
     };
- 
+
   }, []);
 
   const startSlider = () => {
@@ -57,9 +80,16 @@ export default function Slider() {
   return (
     <div ref={slideRef} className="w-full  relative mt-[95px]">
       <div className="aspect-w-16 aspect-h-9">
-     
-        <img src={featuredProducts[currentIndex]} alt=""/>
-        <h1 className=" absolute w-full top-1/2  h-56 transform -translate-y-1/2 px-3 flex justify-between items-center"></h1>
+
+        <img className="max-h-[80vh] w-full" src={featuredProducts[currentIndex]} alt="" />
+        <div className="absolute h-20 w-full bottom-0 bg-zinc-900 bg-opacity-40">
+          <h1 className="px-3 flex justify-between items-center">
+            {titles[currentIndex]['title']}
+          </h1>
+          <p className="flex justify-between items-center">
+            {titles[currentIndex]['desc']}
+          </p>
+        </div>
       </div>
 
       <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
