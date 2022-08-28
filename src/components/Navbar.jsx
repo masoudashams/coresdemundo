@@ -17,11 +17,11 @@ function Navbar() {
 
 
   return (
-    <div className='flex justify-between items-center h-20 px-4'>
+    <div className='flex justify-between items-center h-20 px-4 border-b-2'>
       <div>
-        <h1 onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', 'bg-green-200 p-5')}>
-          Hello..
-        </h1>
+        <div  onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', ' p-5' ,'w-50' )}>
+        <img  src={require('../assets/logo.png')} />
+        </div>
       </div>
 
       <ul className='hidden  md:flex'>
@@ -44,12 +44,12 @@ function Navbar() {
 
       {/*moble menu*/}
       <div onClick={handleNav} className={clsx(
-        nav ? 'left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'left-[-120px]',
+        nav ? 'left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'left-[-160px]',
         "absolute md:hidden"
       )}>
 
         <ul>
-          <h1>hello</h1>
+        <img  src={require('../assets/logo.png')} />
           <NavLink title="Home" />
           <NavLink title="about" />
           <NavLink title="events" />
@@ -72,6 +72,6 @@ export default Navbar
 
 function NavLink({ title, href }) {
   return <a href={href} >
-    <li className='border-b cursor-pointer uppercase hover:underline'>{title}</li>
+    <li className=' cursor-pointer uppercase hover:underline'>{title}</li>
   </a>
 }
