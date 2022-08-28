@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import mapImg from '../assets/maps.png'
+import MyMap from '../components/Map'
 
 function Contact() {
   const [form, setForm] = useState({
@@ -7,12 +8,6 @@ function Contact() {
     'email': '',
     'message': ''
   })
-
-  const location = {
-    address: '1600 Amphitheatre Parkway, Mountain View, california.',
-    lat: 37.42216,
-    lng: -122.08427,
-  }
 
   const handleChange = (event) => {
     let { name, value } = event.target
@@ -23,8 +18,8 @@ function Contact() {
 
 
   return (
-    <div className='w-screen h-full mt-20 flex flex-wrap justify-center items-center'>
-      <div className='text-left w-full max-w-lg'>
+    <div className='w-screen h-full mt-20 flex flex-wrap md:flex-nowrap container mx-auto justify-center items-center'>
+      <div className='text-left w-full max-w-md'>
 
         <h3 className='uppercase font-black text-4xl'>
           Get in Touch
@@ -56,9 +51,7 @@ function Contact() {
 
       </div>
       <div className='w-10'></div>
-      <div className='min-w-md min-h-[300px] max-w-xl bg-green-300'>
-        <img src={mapImg} />
-      </div>
+      <MyMap />
     </div>
   )
 }
