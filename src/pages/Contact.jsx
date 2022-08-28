@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import MyMap from '../components/Map'
 
 function Contact() {
   const [form, setForm] = useState({

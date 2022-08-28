@@ -20,7 +20,7 @@ function Navbar({ setPage }) {
     <div className='flex justify-between items-center h-20 px-4 border-b-2'>
       <div>
         <div onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', ' p-5', 'w-50')}>
-          <img src={require('../assets/logo.png')} />
+          <img src={require('../assets/logo.png')} alt="LOGO" />
         </div>
       </div>
 
@@ -49,7 +49,7 @@ function Navbar({ setPage }) {
       )}>
 
         <ul>
-          <img src={require('../assets/logo.png')} />
+          <img src={require('../assets/logo.png')} alt="LOGO" />
           <NavLink title="Home" />
           <NavLink title="about" />
           <NavLink title="events" />
@@ -71,7 +71,7 @@ function Navbar({ setPage }) {
 export default Navbar
 
 function NavLink({ title, href, onClick }) {
-  return <a onClick={onClick} >
+  return <button onClick={onClick}>
     <li className=' cursor-pointer uppercase hover:underline'>{title}</li>
-  </a>
+  </button>
 }

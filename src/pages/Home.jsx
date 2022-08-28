@@ -17,7 +17,7 @@ function Home() {
       </div>
 
       <div className='  mx-w-[140px] my-12 mr-20'>
-        <img src={require('../assets/home.png')} />
+        <img src={require('../assets/home.png')} alt="homepage" />
       </div>
 
       <div className='mt-[500px] md:mt-[250px] '>
@@ -28,11 +28,18 @@ function Home() {
       </div>
       <br />
 
-      <div className='bg-neutral-900  mt-52 h-screen  text-white w-screen'>
-        <h1 className='absolute ml-10 mt-8' >PROJECTSWEW'RDON</h1><br />
+      <div className='bg-neutral-900 font-utopia  mt-52 h-screen  text-white w-screen'>
+        <h1 className='absolute ml-10 mt-8' >
+          Transforming neighborhoods
+        </h1>
+        <br />
         <span>
-          <p className='absolute ml-10 mt-14 text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab maiores neque mollitia quisquam quasi dignissimos</p> <br />
-          <p className='absolute ml-10 mt-14 text-sm'>nisi minima repellat sit, eos ex natus dolore nobis.</p>
+          <p className='absolute ml-10 mt-14 text-sm'>Dengo Chocolates hired Colors of
+            the World to color the wall of its
+            factory. The author of the work was
+            the Congolese artist Lavi Israël, 28
+            years old, who has been in Brazil
+            since 2015.</p>
         </span>
         <Slider />
 

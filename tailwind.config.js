@@ -6,8 +6,15 @@ module.exports = {
   theme: {
     extend: {
       margin: {
-        '55px': '55px',
-      }
+        '18': '55px',
+      },
+
+      fontFamily: {
+        'roboto': ['Roboto'],
+        'raleway': ['Raleway',],
+        'utopia': ['UtopiaStd-Bold', 'sans']
+      },
+
     },
   },
   plugins: [],
