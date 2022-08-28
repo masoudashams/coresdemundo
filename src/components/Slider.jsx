@@ -35,6 +35,26 @@ let count = 0;
 let slideInterval;
 
 export default function Slider() {
+  const [showButtons, setShowButtons] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+
+    if (position > 600) {
+      setShowButtons(true)
+    }
+    else setShowButtons(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const refs = featuredProducts.reduce((acc, val, i) => {
@@ -62,31 +82,6 @@ export default function Slider() {
 
   const slideRef = useRef();
 
-  const removeAnimation = () => {
-    slideRef.current.classList.remove("fade-anim");
-  };
-
-  useEffect(() => {
-    slideRef.current.addEventListener("animationend", removeAnimation);
-    slideRef.current.addEventListener("mouseenter", pauseSlider);
-    slideRef.current.addEventListener("mouseleave", startSlider);
-
-    startSlider();
-    return () => {
-      pauseSlider();
-    };
-
-  }, []);
-
-  const startSlider = () => {
-    slideInterval = setInterval(() => {
-      nextImage();
-    }, 3000);
-  };
-
-  const pauseSlider = () => {
-    clearInterval(slideInterval);
-  };
 
   const nextImage = () => {
     if (currentIndex >= featuredProducts.length - 1) {
@@ -106,10 +101,8 @@ export default function Slider() {
 
   return (
     <div ref={slideRef} className="w-full inline-flex overflow-x-hidden relative mt-[95px]">
-
-
       {featuredProducts.map((img, i) => (
-        <div ref={refs[i]} className="w-full flex-shrink-0 aspect-w-16 aspect-h-9">
+        <div key={i} ref={refs[i]} className="w-full flex-shrink-0 aspect-w-16 aspect-h-9">
           <img className="max-h-[80vh] w-full" src={img} alt="" />
           <div className="absolute flex justify-start items-end h-full w-full bottom-0 bg-gradient-to-b from-transparent to-zinc-900 bg-opacity-40">
             <div className="p-12">
@@ -124,7 +117,7 @@ export default function Slider() {
         </div>
       ))}
 
-      <div className="fixed w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
+      {showButtons && <div className="fixed w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
         <button
           className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
           onClick={previousImage}
@@ -146,6 +139,7 @@ export default function Slider() {
           </svg>
         </button>
       </div>
+      }
     </div>
   );
 }
