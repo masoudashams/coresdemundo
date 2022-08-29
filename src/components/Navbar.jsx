@@ -6,7 +6,7 @@ import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import clsx from 'clsx';
 
-function Navbar() {
+function Navbar({ setPage }) {
   const [nav, setNav] = useState(false);
   const [logo, setLogo] = useState(false)
 
@@ -17,39 +17,39 @@ function Navbar() {
 
 
   return (
-    <div className='flex justify-between items-center h-20 px-4'>
+    <div className='flex justify-between items-center h-40 mx-w-[1240px] px-4 border-b-2'>
       <div>
-        <h1 onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', 'bg-green-200 p-5')}>
-          Hello..
-        </h1>
+        <div onClick={handleNav} className={clsx(logo ? 'hidden' : 'block',' p-5', 'w-50')}>
+          <img src={require('../assets/logo.png')} alt="LOGO" />
+        </div>
       </div>
 
       <ul className='hidden  md:flex'>
-        <NavLink title="Home" />
-        <NavLink title="about" />
-        <NavLink title="events" />
-        <NavLink title="projects" />
-        <NavLink title="shop" />
-        <NavLink title="contact" />
+        <NavLink title="Home" onClick={() => setPage(0)} />
+        <NavLink title="about" onClick={() => setPage(1)} />
+        <NavLink title="events" onClick={() => setPage(2)} />
+        <NavLink title="projects" onClick={() => setPage(3)} />
+        <NavLink title="shop" onClick={() => setPage(3)} />
+        <NavLink title="contact" onClick={() => setPage(4)} />
       </ul>
 
-      <div className='hidden md:flex'>
+      <div className='hidden md:flex ml-3'>
         <TbWorld size={40} />
       </div>
 
       {/* hmburger*/}
       <div onClick={handleNav} className='md:hidden z-10'>
-        {nav ? <AiOutlineClose className='text-black' size={28} /> : <HiOutlineMenuAlt4 size={28} />}
+        {nav ? <AiOutlineClose className='text-black' size={40} /> : <HiOutlineMenuAlt4 size={40} />}
       </div>
 
       {/*moble menu*/}
       <div onClick={handleNav} className={clsx(
-        nav ? 'left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'left-[-120px]',
-        "absolute md:hidden"
+        nav ? 'left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : ' absolute left-[-920px]',
+        "md:hidden"
       )}>
 
         <ul>
-          <h1>hello</h1>
+          <img src={require('../assets/logo.png')} alt="LOGO" />
           <NavLink title="Home" />
           <NavLink title="about" />
           <NavLink title="events" />
@@ -57,7 +57,7 @@ function Navbar() {
           <NavLink title="shop" />
           <NavLink title="contact" />
 
-          <div className='flex justify-between my-7'>
+          <div className='md:hidden flex justify-between my-7'>
             <FaInstagram size={28} className="icon text-blue-500" />
             <FaFacebook size={28} className="icon text-blue-500" />
             <FaTwitter size={28} className="icon text-teal-400" />
@@ -70,8 +70,8 @@ function Navbar() {
 
 export default Navbar
 
-function NavLink({ title, href }) {
-  return <a href={href} >
-    <li className='border-b cursor-pointer uppercase hover:underline'>{title}</li>
-  </a>
+function NavLink({ title, href, onClick }) {
+  return <button onClick={onClick}>
+    <li className=' cursor-pointer uppercase hover:underline'>{title}</li>
+  </button>
 }

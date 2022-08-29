@@ -4,7 +4,22 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      margin: {
+        '50': '120px',
+      },
+      colors:{
+         'slate-400':' #D9D9D9'
+
+      },
+
+      fontFamily: {
+        'roboto': ['Roboto'],
+        'raleway': ['Raleway',],
+        'utopia': ['UtopiaStd-Bold', 'sans']
+      },
+
+    },
   },
   plugins: [],
 }
