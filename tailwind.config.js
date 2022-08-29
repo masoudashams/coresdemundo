@@ -6,7 +6,11 @@ module.exports = {
   theme: {
     extend: {
       margin: {
-        '18': '55px',
+        '50': '120px',
+      },
+      colors:{
+         'slate-400':' #D9D9D9'
+
       },
 
       fontFamily: {

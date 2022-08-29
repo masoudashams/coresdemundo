@@ -12,9 +12,6 @@ function Contact() {
     setForm({ ...form, [name]: value })
   }
 
-
-
-
   return (
     <div className='w-screen h-full mt-20 flex flex-wrap md:flex-nowrap container mx-auto justify-center items-center'>
       <div className='text-left w-full max-w-md'>
