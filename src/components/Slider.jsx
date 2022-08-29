@@ -139,7 +139,9 @@ export default function Slider() {
           </svg>
         </button>
       </div>
+      
       }
     </div>
   );
 }
+

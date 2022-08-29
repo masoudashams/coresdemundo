@@ -17,9 +17,9 @@ function Navbar({ setPage }) {
 
 
   return (
-    <div className='flex justify-between items-center h-20 px-4 border-b-2'>
+    <div className='flex justify-between items-center h-40 mx-w-[1240px] px-4 border-b-2'>
       <div>
-        <div onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', ' p-5', 'w-50')}>
+        <div onClick={handleNav} className={clsx(logo ? 'hidden' : 'block',' p-5', 'w-50')}>
           <img src={require('../assets/logo.png')} alt="LOGO" />
         </div>
       </div>
@@ -33,19 +33,19 @@ function Navbar({ setPage }) {
         <NavLink title="contact" onClick={() => setPage(4)} />
       </ul>
 
-      <div className='hidden md:flex'>
+      <div className='hidden md:flex ml-3'>
         <TbWorld size={40} />
       </div>
 
       {/* hmburger*/}
       <div onClick={handleNav} className='md:hidden z-10'>
-        {nav ? <AiOutlineClose className='text-black' size={28} /> : <HiOutlineMenuAlt4 size={28} />}
+        {nav ? <AiOutlineClose className='text-black' size={40} /> : <HiOutlineMenuAlt4 size={40} />}
       </div>
 
       {/*moble menu*/}
       <div onClick={handleNav} className={clsx(
-        nav ? 'left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : 'left-[-160px]',
-        "absolute md:hidden"
+        nav ? 'left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : ' absolute left-[-920px]',
+        "md:hidden"
       )}>
 
         <ul>
@@ -57,7 +57,7 @@ function Navbar({ setPage }) {
           <NavLink title="shop" />
           <NavLink title="contact" />
 
-          <div className='flex justify-between my-7'>
+          <div className='md:hidden flex justify-between my-7'>
             <FaInstagram size={28} className="icon text-blue-500" />
             <FaFacebook size={28} className="icon text-blue-500" />
             <FaTwitter size={28} className="icon text-teal-400" />

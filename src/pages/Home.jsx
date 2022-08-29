@@ -55,6 +55,7 @@ function Home() {
           {carditems.map((item, i) => <Card key={i} item={item} />)}
         </div>
       </section>
+    
     </div>
   )
 }

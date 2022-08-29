@@ -1,50 +1,77 @@
-const images = [];
-const carditems = [
-  {
-    title: 'Hello',
-    image: "/images/car1.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
-  },
-  {
-    title: 'Hello',
-    image: "/images/car2.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
-  },
-  {
-    title: 'Hello',
-    image: "/images/car1.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
-  },
+const images = [
   {
     title: 'Word',
-    image: "/images/car3.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    image: "/images/card4.png",
+    desc: "Quia magnam aperiam,repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
   },
   {
-    title: 'Hello',
-    image: "/images/car1.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    title: 'mckdm',
+    image: "/images/card5.png",
+    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
   },
   {
     title: 'New organism',
-    image: "/images/car2.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    image: "/images/card6.png",
+    desc: "Quia magnam aperrepudiandae dolorum sunt, ullam nihil deserunt!"
   },
+ 
+];
+const mycards = [
   {
     title: 'Hello',
-    image: "/images/car1.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    image: "/images/card1.png",
+    desc: "Quia magnam corporis esse aut molesteserunt!"
   },
   {
-    title: 'Hello',
-    image: "/images/car1.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    title: 'jsjj',
+    image: "/images/card2.png",
+    desc: "Lorem ipsum dolor sit amet consectetur adi eos!deserunt!"
   },
   {
-    title: 'Hello',
-    image: "/images/car1.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non officia eos! Quia magnam aperiam, quaerat corporis esse aut molestiae accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    title: 'mmdkk',
+    image: "/images/card3.png",
+    desc: "a eos! Quia magnam aperiam, accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
   },
+  
+ 
+];
+
+
+const carditems = [
+  {
+    title: 'Hello',
+    image: "/images/card1.png",
+    desc: "Quia magnam corporis esse aut molesteserunt!"
+  },
+  {
+    title: 'jsjj',
+    image: "/images/card2.png",
+    desc: "Lorem ipsum dolor sit amet consectetur adi eos!deserunt!"
+  },
+  {
+    title: 'mmdkk',
+    image: "/images/card3.png",
+    desc: "a eos! Quia magnam aperiam, accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+  },
+   
+  {
+    title: 'Word',
+    image: "/images/card4.png",
+    desc: "Quia magnam aperiam,repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+  },
+  {
+    title: 'mckdm',
+    image: "/images/card5.png",
+    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+  },
+  {
+    title: 'New organism',
+    image: "/images/card6.png",
+    desc: "Quia magnam aperrepudiandae dolorum sunt, ullam nihil deserunt!"
+  },
+  
+  
+ 
 ];
 
 
@@ -52,4 +79,5 @@ const carditems = [
 export {
   images,
   carditems,
+  mycards
 };
