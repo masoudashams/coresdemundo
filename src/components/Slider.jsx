@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 const featuredProducts = [
   "/images/car1.png",
-  "/images/car2.png",
-  "/images/car3.png",
+  "/images/card3.png",
+  "/images/card5.png",
 ];
 
 const titles = [
@@ -64,18 +64,15 @@ export default function Slider() {
 
 
   const scrollToImage = i => {
-    // First let's set the index of the image we want to see next
+    
     setCurrentIndex(i);
-    // Now, this is where the magic happens. We 'tagged' each one of the images with a ref,
-    // we can then use built-in scrollIntoView API to do eaxactly what it says on the box - scroll it into
-    // your current view! To do so we pass an index of the image, which is then use to identify our current
-    // image's ref in 'refs' array above.
+   
     refs[i].current.scrollIntoView({
-      //     Defines the transition animation.
+     
       behavior: 'smooth',
-      //      Defines vertical alignment.
+    
       block: 'nearest',
-      //      Defines horizontal alignment.
+    
       inline: 'start',
     });
   };
@@ -100,7 +97,8 @@ export default function Slider() {
   };
 
   return (
-    <div ref={slideRef} className="w-full inline-flex overflow-x-hidden relative mt-[95px]">
+   
+      <div ref={slideRef} className=" w-full inline-flex overflow-x-hidden relative mt-[95px]">
       {featuredProducts.map((img, i) => (
         <div key={i} ref={refs[i]} className="w-full flex-shrink-0 aspect-w-16 aspect-h-9">
           <img className="max-h-[80vh] w-full" src={img} alt="" />
@@ -117,31 +115,37 @@ export default function Slider() {
         </div>
       ))}
 
-      {showButtons && <div className="fixed w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
-        <button
-          className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
-          onClick={previousImage}
-        >
+      {showButtons && <div className="fixed   top-1/2 w-full transform -translate-y-1/2 px-3 flex justify-between ">
+      
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={previousImage}>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={nextImage}>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
 
-          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M37.3504 12.0344L18.3013 31.0167L17.7929 31.5234L19.0527 32.7876L17.7929 34.0518L18.3013 34.5585L37.3504 53.5408L40.8797 49.999L23.6077 32.7876L40.8797 15.5762L37.3504 12.0344ZM62.5 32.5C62.5 49.0685 49.0685 62.5 32.5 62.5C15.9315 62.5 2.5 49.0685 2.5 32.5C2.5 15.9315 15.9315 2.5 32.5 2.5C49.0685 2.5 62.5 15.9315 62.5 32.5Z" stroke="white" strokeWidth="2" />
-          </svg>
+
+    
 
 
 
-        </button>
-        <button
-          className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
-          onClick={nextImage}
-        >
-          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M27.6496 12.0344L46.6987 31.0167L47.2071 31.5234L45.9473 32.7876L47.2071 34.0518L46.6987 34.5585L27.6496 53.5408L24.1203 49.999L41.3923 32.7876L24.1203 15.5762L27.6496 12.0344ZM2.5 32.5C2.5 49.0685 15.9315 62.5 32.5 62.5C49.0685 62.5 62.5 49.0685 62.5 32.5C62.5 15.9315 49.0685 2.5 32.5 2.5C15.9315 2.5 2.5 15.9315 2.5 32.5Z" stroke="white" strokeWidth="2" />
-          </svg>
-        </button>
+
+
+
+
+
+
       </div>
       
       }
     </div>
+   
   );
 }
 
