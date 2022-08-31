@@ -6,7 +6,7 @@ import { carditems } from '../constants/data'
 function Home() {
 
   return (
-    <div>
+    <>
       <section className='grid grid-cols-1  lg:grid-cols-3 lg:gap-50 justify-items-center mt-9 '>
         <div className='mt-6 md:mt-[250px] ml-44'>
           <h1><span className='text-red-600'>C</span>
@@ -48,15 +48,27 @@ function Home() {
           <Slider />
         </div>
       </section>
+      
+      <div className='w-full  h-30  p-20  text-left'>
+       <h1>UPCOMING EVENTS AND PROJECTS</h1>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
+      </div>
+     {/* card carousel    */}
 
 
-      <section className='my-12'>
-        <div className='flex overflow-x-scroll w-screen flex-nowrap'>
+      <section className='container  overflow-x-scroll scroll '>
+        <div className='container mx-auto py-10'>
+        <div className=' flex  my-8 flex-nowrap justify-between items-center'>
           {carditems.map((item, i) => <Card key={i} item={item} />)}
         </div>
+        </div>
       </section>
+
+
+
+      
+    </>
     
-    </div>
   )
 }
 
@@ -65,11 +77,13 @@ export default Home
 
 
 function Card({ item }) {
-  return <div className='border border-black  ml-5 min-h-fit min-w-[400px] max-w-md'>
-    <img src={item.image} className="h-64" />
-    <div className='text-left p-2'>
-      <h1>{item.title}</h1>
-      <p>{item.desc}</p>
+  return  <div  className='flex flex-col h-[400px]  ml-8  text-start justify-between   border border-black cursor-pointer hover:scale-105 ease-out duration-300'>
+    <img src={item.image} className="h-64 " />
+    <div className='text-left p-2  '>
+      <h1>{item.title}</h1><br/>
+      <p className='px-6 py-4 w-[200px] text-sm break-all '>{item.desc}</p>
+      
     </div>
-  </div>
+ </div>
+
 }

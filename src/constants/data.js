@@ -41,7 +41,7 @@ const carditems = [
   {
     title: 'Hello',
     image: "/images/card1.png",
-    desc: "Quia magnam corporis esse aut molesteserunt!"
+    desc: "Quia magnam corporis esse aut molesteserunt jkmkiuyt kio kolo kkoo jjy dre !"
   },
   {
     title: 'jsjj',
@@ -51,18 +51,18 @@ const carditems = [
   {
     title: 'mmdkk',
     image: "/images/card3.png",
-    desc: "a eos! Quia magnam aperiam, accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    desc: "a eos! Quia magnam aperiam, accusamus qui inventore r!"
   },
    
   {
     title: 'Word',
     image: "/images/card4.png",
-    desc: "Quia magnam aperiam,repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    desc: "Quia magnam aperiam,repudiandae dolorum suk ko deserunt!"
   },
   {
     title: 'mckdm',
     image: "/images/card5.png",
-    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudianda!"
   },
   {
     title: 'New organism',

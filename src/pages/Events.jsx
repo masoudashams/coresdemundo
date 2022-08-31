@@ -18,7 +18,7 @@ function Events() {
 export default Events
 
 function Card({ item }) {
-  return <div className='flex flex-col h-[400px] p-4 justify-center items-center max-w-sm border border-black '>
+  return <div className='flex flex-col h-[400px] ml-8 p-4  max-w-sm border border-black '>
     <img src={item.image} className="h-64" />
 
     <div className='text-left p-2'>
