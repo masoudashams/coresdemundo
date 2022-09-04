@@ -64,18 +64,14 @@ export default function Slider() {
 
 
   const scrollToImage = i => {
-    // First let's set the index of the image we want to see next
     setCurrentIndex(i);
-    // Now, this is where the magic happens. We 'tagged' each one of the images with a ref,
-    // we can then use built-in scrollIntoView API to do eaxactly what it says on the box - scroll it into
-    // your current view! To do so we pass an index of the image, which is then use to identify our current
-    // image's ref in 'refs' array above.
+  
     refs[i].current.scrollIntoView({
-      //     Defines the transition animation.
+     
       behavior: 'smooth',
-      //      Defines vertical alignment.
+    
       block: 'nearest',
-      //      Defines horizontal alignment.
+   
       inline: 'start',
     });
   };

@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      gradientColorStops: theme => ({
+        'primary': '#FF8C00',
+        'secondary': '#FFA500',
+        'danger': '#FFD700',
+    }),
+
+      
       margin: {
         '50': '120px',
       },
