@@ -1,34 +1,34 @@
 
 const mycards = [
   {
-    title: 'Hello',
+    title: 'Dengo chocolats',
     image: "/images/card1.png",
-    desc: "Quia magnam corporis esse aut molesteserunt!"
+    desc: "Lorem Ipsum is simply dummy  dummy text ever since the 1500s, when an "
   },
   {
-    title: 'jsjj',
+    title: 'FOFA THE STAR',
     image: "/images/card2.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adi eos!deserunt!"
+    desc: "It’s a NFT collection that is created by an Afghan refugee."
   },
   {
-    title: 'mmdkk',
+    title: 'Dengo chocolats',
     image: "/images/card3.png",
-    desc: "a eos! Quia magnam aperiam, accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    desc:   "Lorem Ipsum is simply dummy  dummy text ever since the 1500s, when an "
   },
   {
-    title: 'Word',
+    title: 'FOFA THE STAR',
     image: "/images/card4.png",
-    desc: "Quia magnam aperiam,repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+    desc: "It’s a NFT collection that is created by an Afghan refugee."
   },
   {
-    title: 'mckdm',
+    title: 'Dengo chocolats',
     image: "/images/card5.png",
     desc: "Lorem ipsuQuia magnam accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
   },
   {
-    title: 'New organism',
+    title: 'FOFA THE STAR',
     image: "/images/card6.png",
-    desc: "Quia magnam aperrepudiandae dolorum sunt, ullam nihil deserunt!"
+    desc: "Lorem Ipsum is simply dummy  dummy text ever since the 1500s, when an "
   },
 
 ];
@@ -36,37 +36,35 @@ const mycards = [
 
 const carditems = [
   {
-    title: 'Hello',
+    title: 'Dengo chocolats',
     image: "/images/card1.png",
-    desc: "Quia magnam corporis esse aut molesteserunt jkmkiuyt kio kolo kkoo jjy dre !"
+    desc: "Lorem Ipsum is simply dummy  dummy text ever since the 1500s, when an "
   },
   {
-    title: 'jsjj',
+    title: 'FOFA THE STAR',
     image: "/images/card2.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adi eos!deserunt!"
+    desc: "It’s a NFT collection that is created by an Afghan refugee."
   },
   {
-    title: 'mmdkk',
+    title: 'Dengo chocolats',
     image: "/images/card3.png",
-    desc: "a eos! Quia magnam aperiam, accusamus qui inventore r!"
+    desc:   "Lorem Ipsum is simply dummy  dummy text ever since the 1500s, when an "
   },
-
   {
-    title: 'Word',
+    title: 'FOFA THE STAR',
     image: "/images/card4.png",
-    desc: "Quia magnam aperiam,repudiandae dolorum suk ko deserunt!"
+    desc: "It’s a NFT collection that is created by an Afghan refugee."
   },
   {
-    title: 'mckdm',
+    title: 'Dengo chocolats',
     image: "/images/card5.png",
-    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudianda!"
+    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
   },
   {
-    title: 'New organism',
+    title: 'FOFA THE STAR',
     image: "/images/card6.png",
-    desc: "Quia magnam aperrepudiandae dolorum sunt, ullam nihil deserunt!"
+    desc: "Lorem Ipsum is simply dummy  dummy text ever since the 1500s, when an "
   },
-
 
 
 ];

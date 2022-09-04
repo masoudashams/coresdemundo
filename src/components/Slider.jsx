@@ -12,12 +12,12 @@ const titles = [
     desc: "Dengo Chocolates hired Colors of the World to color the wall of its factory. The author of the work was the Congolese artist Lavi Israël, 28 years old, who has been in Brazil since 2015.",
   },
   {
-    title: "Hello New",
-    desc: "This is an interesing fade in and out",
+    title: "Libarty for Afghan women",
+    desc: "Dengo Chocolates hired Colors of the World to color the wall of its factory. The author of the work was the Congolese artist Lavi Israël, 28 years old, who has been in Brazil since 2015",
   },
   {
-    title: "Amazing",
-    desc: "This is an interesing fade in and out",
+    title: "Abstract",
+    desc: "Dengo Chocolates hired Colors of the World to color the wall of its factory. The author of the work was the Congolese artist Lavi Israël, 28 years old, who has been in Brazil since 2015",
   },
   {
     title: "Stuff",
