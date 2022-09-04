@@ -19,7 +19,7 @@ function Navbar({ setPage }) {
   return (
     <div className='flex justify-between items-center h-40 mx-w-[1240px] px-4 border-b-2'>
       <div>
-        <div onClick={handleNav} className={clsx(logo ? 'hidden' : 'block',' p-5', 'w-50')}>
+        <div onClick={handleNav} className={clsx(logo ? 'hidden' : 'block', ' p-5', 'w-50')}>
           <img src={require('../assets/logo.png')} alt="LOGO" />
         </div>
       </div>
@@ -37,25 +37,26 @@ function Navbar({ setPage }) {
         <TbWorld size={40} />
       </div>
 
-      {/* hmburger*/}
+      {/* menu icon */}
       <div onClick={handleNav} className='md:hidden z-10'>
         {nav ? <AiOutlineClose className='text-black' size={40} /> : <HiOutlineMenuAlt4 size={40} />}
       </div>
 
-      {/*moble menu*/}
+      {/* phone menu*/}
       <div onClick={handleNav} className={clsx(
-        nav ? 'left-0 top-0 w-full bg-gray-100/90 px-4 py-7 flex flex-col' : ' absolute left-[-920px]',
-        "md:hidden"
+        nav ? 'left-0 top-0  w-full bg-gray-100/90 px-4 py-7 flex flex-col' : ' left-[-920px]',
+        "md:hidden absolute flex flex-col"
       )}>
 
-        <ul>
-          <img src={require('../assets/logo.png')} alt="LOGO" />
-          <NavLink title="Home" />
-          <NavLink title="about" />
-          <NavLink title="events" />
-          <NavLink title="projects" />
-          <NavLink title="shop" />
-          <NavLink title="contact" />
+
+        <ul className='flex flex-col'>
+          <img src={require('../assets/logo.png')} className="w-40" alt="LOGO" />
+          <NavLink title="Home" onClick={() => setPage(0)} />
+          <NavLink title="about" onClick={() => setPage(1)} />
+          <NavLink title="events" onClick={() => setPage(2)} />
+          <NavLink title="projects" onClick={() => setPage(3)} />
+          <NavLink title="shop" onClick={() => setPage(3)} />
+          <NavLink title="contact" onClick={() => setPage(4)} />
 
           <div className='md:hidden flex justify-between my-7'>
             <FaInstagram size={28} className="icon text-blue-500" />
@@ -63,6 +64,7 @@ function Navbar({ setPage }) {
             <FaTwitter size={28} className="icon text-teal-400" />
           </div>
         </ul>
+
       </div>
     </div>
   )

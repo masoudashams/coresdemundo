@@ -11,9 +11,8 @@ module.exports = {
       margin: {
         '50': '120px',
       },
-      colors:{
-         'slate-400':' #D9D9D9'
-
+      colors: {
+        'slate-400': ' #D9D9D9'
       },
 
       fontFamily: {
@@ -22,9 +21,9 @@ module.exports = {
         'utopia': ['UtopiaStd-Bold', 'sans']
       },
       backgroundImage: {
-        'card' : "url('/images/card1.png')",
-     
-    },
+        'card': "url('/images/card1.png')",
+
+      },
 
 
     },

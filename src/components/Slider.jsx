@@ -6,7 +6,6 @@ const featuredProducts = [
   "/images/card3.png",
   "/images/card5.png",
 ];
-
 const titles = [
   {
     title: "Transforming neighborhoods",
@@ -64,15 +63,15 @@ export default function Slider() {
 
 
   const scrollToImage = i => {
-    
+
     setCurrentIndex(i);
-   
+
     refs[i].current.scrollIntoView({
-     
+
       behavior: 'smooth',
-    
+
       block: 'nearest',
-    
+
       inline: 'start',
     });
   };
@@ -97,8 +96,8 @@ export default function Slider() {
   };
 
   return (
-   
-      <div ref={slideRef} className=" w-full inline-flex overflow-x-hidden relative mt-[95px]">
+
+    <div ref={slideRef} className=" w-full inline-flex overflow-x-hidden relative mt-[95px]">
       {featuredProducts.map((img, i) => (
         <div key={i} ref={refs[i]} className="w-full flex-shrink-0 aspect-w-16 aspect-h-9">
           <img className="max-h-[80vh] w-full" src={img} alt="" />
@@ -116,22 +115,22 @@ export default function Slider() {
       ))}
 
       {showButtons && <div className="fixed   top-1/2 w-full transform -translate-y-1/2 px-3 flex justify-between ">
-      
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={previousImage}>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+
+        <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={previousImage}>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
             <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={nextImage}>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          </span>
+        </button>
+        <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={nextImage}>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             <span class="sr-only">Next</span>
-        </span>
-    </button>
+          </span>
+        </button>
 
 
-    
+
 
 
 
@@ -142,10 +141,10 @@ export default function Slider() {
 
 
       </div>
-      
+
       }
     </div>
-   
+
   );
 }
 

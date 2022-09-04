@@ -1,21 +1,4 @@
-const images = [
-  {
-    title: 'Word',
-    image: "/images/card4.png",
-    desc: "Quia magnam aperiam,repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
-  },
-  {
-    title: 'mckdm',
-    image: "/images/card5.png",
-    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
-  },
-  {
-    title: 'New organism',
-    image: "/images/card6.png",
-    desc: "Quia magnam aperrepudiandae dolorum sunt, ullam nihil deserunt!"
-  },
- 
-];
+
 const mycards = [
   {
     title: 'Hello',
@@ -32,8 +15,22 @@ const mycards = [
     image: "/images/card3.png",
     desc: "a eos! Quia magnam aperiam, accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
   },
-  
- 
+  {
+    title: 'Word',
+    image: "/images/card4.png",
+    desc: "Quia magnam aperiam,repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+  },
+  {
+    title: 'mckdm',
+    image: "/images/card5.png",
+    desc: "Lorem ipsuQuia magnam accusamus qui inventore repudiandae dolorum sunt, ullam nihil. Inventore, deserunt!"
+  },
+  {
+    title: 'New organism',
+    image: "/images/card6.png",
+    desc: "Quia magnam aperrepudiandae dolorum sunt, ullam nihil deserunt!"
+  },
+
 ];
 
 
@@ -53,7 +50,7 @@ const carditems = [
     image: "/images/card3.png",
     desc: "a eos! Quia magnam aperiam, accusamus qui inventore r!"
   },
-   
+
   {
     title: 'Word',
     image: "/images/card4.png",
@@ -69,15 +66,14 @@ const carditems = [
     image: "/images/card6.png",
     desc: "Quia magnam aperrepudiandae dolorum sunt, ullam nihil deserunt!"
   },
-  
-  
- 
+
+
+
 ];
 
 
 
 export {
-  images,
   carditems,
   mycards
 };
