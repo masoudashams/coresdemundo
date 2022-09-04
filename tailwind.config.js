@@ -5,14 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-
-      gradientColorStops: theme => ({
-        'primary': '#FF8C00',
-        'secondary': '#FFA500',
-        'danger': '#FFD700',
-    }),
-
-      
+      height: {
+        '128': '32rem',
+      },
       margin: {
         '50': '120px',
       },
@@ -26,6 +21,11 @@ module.exports = {
         'raleway': ['Raleway',],
         'utopia': ['UtopiaStd-Bold', 'sans']
       },
+      backgroundImage: {
+        'card' : "url('/images/card1.png')",
+     
+    },
+
 
     },
   },
