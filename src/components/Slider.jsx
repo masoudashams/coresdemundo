@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 
 import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
 const featuredProducts = [
-  "/images/car1.png",
-  "/images/car2.png",
-  "/images/car3.png",
+  "../assets/home.png",
+  "../assets/image 2.png",
+  "../assets/car3.png",
 ];
 
 const titles = [
@@ -139,7 +139,7 @@ export default function Slider() {
           </svg>
         </button>
       </div>
-      
+
       }
     </div>
   );
