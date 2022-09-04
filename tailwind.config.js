@@ -5,10 +5,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+<<<<<<< HEAD
       height: {
         '128': '32rem',
       },
-      margin: {
+=======
+
+      gradientColorStops: theme => ({
+        'primary': '#FF8C00',
+        'secondary': '#FFA500',
+        'danger': '#FFD700',
+    }),
+
+      
+>>>>>>> 267ab922935f1aa5a73726ca4db1647e3d8731cc
+  margin: {
         '50': '120px',
       },
       colors:{

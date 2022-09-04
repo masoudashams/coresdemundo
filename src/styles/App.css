@@ -1,3 +1,12 @@
-.about-section1 {
-  background-image: url('../assets/home.png');
-}
+.bg-about {
+    background-image: url('../assets/about1.png');
+    height: 790px;
+  
+
+ 
+  }
+  .bg-about2 {
+    background-image: url('../assets/about2.png');
+    height: 790px;
+ 
+  }
