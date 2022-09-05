@@ -23,7 +23,7 @@ function Home() {
         </div>
 
         <div className='mt-4 md:mt-[250px] '>
-          <p> dolor sit amet consectetur,at<br />
+          <p> lorem dolor sit amet consectetur,at<br />
             Alias veritatis magnam autem cumque ab in<br />
             itaque nam repudiandae ipsa amet blanditiis <br />
             Saepe, optio voluptatem! Aliquam.</p>
