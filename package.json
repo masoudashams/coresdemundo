@@ -1,5 +1,5 @@
 {
-  "name": "coresdomundo",
+  "name": "coresdemundo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,13 +49,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SebghatYusuf/coresdemundo.git"
-  },
-  "bugs": {
-    "url": "https://github.com/SebghatYusuf/coresdemundo/issues"
-  },
-  "homepage": "https://github.com/SebghatYusuf/coresdemundo#readme"
+  "license": "ISC"
 }
