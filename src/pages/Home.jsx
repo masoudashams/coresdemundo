@@ -22,6 +22,7 @@ function Home() {
           <img src={require('../assets/home.png')} alt="homepage" />
         </div>
 
+<<<<<<< HEAD
         <div className=' sm:mt-[150px]  text-xs sm:mx-auto '>
             <p>Colors of the World is a project where
               refugees plastic artists are
@@ -31,6 +32,13 @@ function Home() {
               Building construction sidings and
               walls are being transformed into
               true works of art.</p>
+=======
+        <div className='mt-4 md:mt-[250px] '>
+          <p> lorem dolor sit amet consectetur,at<br />
+            Alias veritatis magnam autem cumque ab in<br />
+            itaque nam repudiandae ipsa amet blanditiis <br />
+            Saepe, optio voluptatem! Aliquam.</p>
+>>>>>>> c50f9e5c (lorem added)
         </div>
       </section>
 
